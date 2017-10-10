@@ -1,0 +1,184 @@
+// Variables
+$spacing = 0.5rem
+color = {
+  accent: #F06
+}
+
+// Base
+:root
+  box-sizing: border-box
+  padding: ($spacing * 3)
+  
+*
+  &,
+  &:before,
+  &:after
+    box-sizing: inherit
+    font-size: inherit
+    font-family: inherit
+    line-height: inherit
+    color: inherit
+    margin: 0
+
+// Reset
+body,
+br,
+li,
+dt,
+dd,
+th,
+td,
+option
+  margin-top: 0
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  padding: 0
+  
+body:not([class])
+  max-width: 45em
+  margin-right: auto
+  margin-left: auto
+  h2,
+  h3,
+  p,
+  pre
+    margin-top: ($spacing * 2)
+
+// Text
+html
+  font-family: 'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', system-ui, Roboto, sans-serif
+  line-height: 1.33
+
+// Localized font-families from Fabric-UI
+[lang=en]
+  font-family: 'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', system-ui, Roboto, sans-serif
+[lang=cs-CZ], [lang=et-EE], [lang=hr-HR], [lang=hu-HU], [lang=lt-LT], [lang=lv-LV], [lang=pl-PL], [lang=tr-TR], [lang=sk-SK], [lang=kk-KZ], [lang=lt-sr-SP]
+  font-family: 'Segoe UI Regular EastEuropean', 'Segoe UI', 'Segoe WP', system-ui, Roboto, sans-serif
+[lang=ja-JP] 
+  font-family: YuGothic, 'Meiryo UI', Meiryo, 'MS Pgothic', Osaka, 'Segoe UI', system-ui, Roboto, sans-serif
+[lang=ko-KR]
+  font-family: 'Malgun Gothic', Gulim, 'Segoe UI', system-ui, Roboto, sans-serif
+[lang=hi-IN]
+  font-family: 'Nirmala UI', 'Segoe UI', Tahoma, Arial, sans-serif
+[lang=th-TH]
+  font-family: 'Leelawadee UI Regular', 'Kmer UI', 'Segoe UI', 'Segoe WP', system-ui, Roboto, sans-serif
+[lang=ch-ZHS]
+  font-family: 'Microsoft Yahei', Verdana, Simsun, 'Segoe UI', system-ui, Roboto, sans-serif
+[lang=ch-ZHT]
+  font-family: 'Microsoft Jhenghei', Pmingliu, 'Segoe UI', system-ui, Roboto, sans-serif
+[lang=ar]
+  font-family: 'Segoe UI Regular Arabic', 'Segoe UI', 'Segoe WP', system-ui, Roboto, sans-serif
+[lang=bg-BG], [lang=ru-RU], [lang=uk-UA]
+  font-family: 'Segoe UI Regular Cyrillic', 'Segoe UI', 'Segoe WP', system-ui, Roboto, sans-serif
+[lang=el-GR]
+  font-family: 'Segoe UI Regular Greek', 'Segoe UI', 'Segoe WP', system-ui, Roboto, sans-serif
+[lang=he-IL]
+  font-family: 'Segoe UI Regular Hebrew', 'Segoe UI', 'Segoe WP', system-ui, Roboto, sans-serif
+[lang=vi-VN]
+  font-family: 'Segoe UI Regular Vietnamese', 'Segoe UI', 'Segoe WP', system-ui, Roboto, sans-serif
+  
+ul
+  list-style: none
+  
+code
+  font-family: consolas, monospace
+  color: color.accent
+  
+// Forms
+label
+  display: block
+  cursor: pointer
+
+button,
+input,
+select,
+textarea
+  margin: 0
+  padding: $spacing
+
+button
+  cursor: pointer
+  
+input,
+select,
+textarea
+  display: block
+  width: 100%
+  border: thin solid
+  
+input[type="checkbox"],
+input[type="radio"]
+  display: inline-block
+  vertical-align: middle
+  width: auto
+  
+[aria-invalid]
+  border-color: color.accent
+
+// Media
+img,
+embed,
+object,
+audio,
+video,
+iframe
+  height: auto
+  max-width: 100%
+  vertical-align: text-bottom
+
+iframe
+  border: 0
+
+svg
+  fill: currentColor
+  width: 1em
+  
+// Data
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+td,
+th
+  text-align: left
+  word-wrap: normal
+  line-height: 1
+  padding: $spacing
+
+// Grid
+.grid
+  display: flex
+  flex-wrap: wrap
+  & > *
+    flex: 1 0 5em
+    padding: $spacing
+    border: thin solid color.accent
+    
+.grid.has-gaps
+  margin-left: (-1 * $spacing)
+  margin-right: (-1 * $spacing)
+  & > *
+    margin: $spacing
+    

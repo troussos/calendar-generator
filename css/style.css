@@ -1,0 +1,56 @@
+#calendar {
+  background-color: #fff;
+  color: #666;
+  margin: 25vh auto;
+  max-width: 30em;
+}
+h1 {
+  font-size: 2rem;
+}
+button,
+input,
+select,
+textarea {
+  border: 2px solid #666;
+}
+button {
+  cursor: pointer;
+  color: #f06;
+  background-color: transparent;
+  text-transform: lowercase;
+}
+button:focus,
+button:hover {
+  background-color: #eee;
+}
+a {
+  color: #f06;
+}
+a:hover {
+  color: #000;
+}
+form p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+form button,
+form label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+form button:not(:first-child) {
+  margin-left: 1rem;
+}
+input {
+  color: #000;
+}
+input:invalid {
+  border-color: #f06;
+}
+.is-wide {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
